@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Browser-fetch-02-crypto-currency-converter</title>
+  </head>
+  <body>
+    <script id="currencies-template" type="text/x-handlebars-template">
+            <main class="">
+
+             <form>
+       <h1>Crypto-Rate</h1>
+        <div class="form-group">
+          <label for="crypto-currency" class="bg-primary">Crypto-currency</label>
+          <select class="form-control" id="crypto-currency">
+            <option>BTC</option>
+            <option>LTC</option>
+            <option>DOGE</option>
+            <option>ETH</option>
+          </select>
+          <input class="form-control" type="number" placeholder="Default input" id='amount'>
+        </div>
+        <div class="form-group">
+        <label for="currency" class="bg-danger">Currency</label>
+          <select class="form-control" id="currency">
+            <option>USD</option>
+            <option>EUR</option>
+            <option>TRY</option>
+          </select>
+         <input id='result' class="form-control" type="text" placeholder="" readonly>
+         <button type="submit" class="btn btn-primary">Convert</button>
+        </div>
+
+      </form>
+            </main>
+    </script>
+  </body>
+</html>
