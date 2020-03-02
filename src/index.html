@@ -8,33 +8,35 @@
   </head>
   <body>
     <script id="currencies-template" type="text/x-handlebars-template">
-            <main class="">
+                  <main class="">
 
-             <form>
-       <h1>Crypto-Rate</h1>
-        <div class="form-group">
-          <label for="crypto-currency" class="bg-primary">Crypto-currency</label>
-          <select class="form-control" id="crypto-currency">
-            <option>BTC</option>
-            <option>LTC</option>
-            <option>DOGE</option>
-            <option>ETH</option>
-          </select>
-          <input class="form-control" type="number" placeholder="Default input" id='amount'>
-        </div>
-        <div class="form-group">
-        <label for="currency" class="bg-danger">Currency</label>
-          <select class="form-control" id="currency">
-            <option>USD</option>
-            <option>EUR</option>
-            <option>TRY</option>
-          </select>
-         <input id='result' class="form-control" type="text" placeholder="" readonly>
-         <button type="submit" class="btn btn-primary">Convert</button>
-        </div>
+                   <form>
+             <h1>Crypto-Rate</h1>
+              <div class="form-group form-inline w-100 my-2">
 
-      </form>
-            </main>
+                <label for="crypto-currency" class="border rounded-left mt-0 title">Crypto-Currency</label>
+                <select class="form-control rounded-right " id="crypto-currency">
+                  <option>BTC</option>
+                  <option>LTC</option>
+                  <option>DOGE</option>
+                  <option>ETH</option>
+                </select>
+
+              </div>
+               <input class="form-control rounded my-2" type="number" placeholder="Amount" id='amount'>
+              <div class="form-group form-inline my-2">
+              <label for="currency" class="border rounded-left mt-0 title">Currency</label>
+                <select class="form-control rounded-right" id="currency">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>TRY</option>
+                </select>
+
+              </div>
+      <input id='result' class="form-control rounded my-2" type="text" placeholder="Result" readonly>
+               <button type="submit" class="btn border rounded convert">Convert</button>
+            </form>
+                  </main>
     </script>
   </body>
 </html>
